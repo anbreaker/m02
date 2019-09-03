@@ -1,20 +1,21 @@
-from tkinter import *    # Carga módulo tk (widgets estándar)
-from tkinter import ttk  # Carga ttk (para widgets nuevos 8.5+)
 import turtle
 
 tortuguita = turtle.Turtle()
-
 otraTortuguita = turtle.Turtle()
+lentorra = turtle.Turtle()
+
+lentorra.speed(1)
+lentorra.fd(150)
 
 tortuguita.shape('turtle')
+tortuguita.color('green')
 tortuguita.fd(50)
+tortuguita.speed(2)
 
-
-otraTortuguita.color('green')
+otraTortuguita.color('blue')
 otraTortuguita.left(90)
-otraTortuguita.fd(50)
-
-#2200
+otraTortuguita.fd(150)
+otraTortuguita.speed(3)
 
 
 
