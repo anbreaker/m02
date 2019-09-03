@@ -9,6 +9,8 @@ def sumaTodos(limitTo, f):
     for i in range(limitTo + 1):
         resultado += f(i)
     return resultado
-
-print(sumaTodos(100 , normal))
-print(sumaTodos(3 , cuadrado))
+if __name__ == '__main__':
+    print(sumaTodos(100 , normal))
+    print(sumaTodos(3 , cuadrado))
+else:
+    print(__name__)
