@@ -44,7 +44,10 @@ class Termometro():
         if uniM == None:
             return self.__str__()
         else:
-            return self.conversor(self.__temperatura, self.__unidad)
+            if uniM == 'F' or uniM == 'C':
+                return self.conversor(self.__temperatura, self.__unidad)
+            else:
+                return self.__str__()
 
 
 def main():
